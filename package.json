@@ -1,0 +1,21 @@
+{
+  "name": "bootstrapTry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-webserver": "^0.9.1",
+    "node-sass": "^4.5.3"
+  }
+}
