@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default; */
+/* $font-size-h2:            floor(($font-size-base * 16.15)) !default; // ~30px */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -1895,7 +1897,7 @@ h1, .h1 {
 
 /* line 48, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
 h2, .h2 {
-  font-size: 30px;
+  font-size: 1.5em;
 }
 
 /* line 49, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_type.scss */
@@ -4395,7 +4397,7 @@ select[multiple].input-lg,
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857;
-  border-radius: 4px;
+  border-radius: 10px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5295,8 +5297,8 @@ tbody.collapse.in {
 
 /* line 175, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_button-groups.scss */
 .btn-group-vertical > .btn:first-child:not(:last-child) {
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -5305,8 +5307,8 @@ tbody.collapse.in {
 .btn-group-vertical > .btn:last-child:not(:first-child) {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 /* line 184, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_button-groups.scss */
@@ -5740,7 +5742,7 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   border: 1px solid transparent;
 }
 
@@ -6201,29 +6203,29 @@ tbody.collapse.in {
 
 /* line 397, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: lightblue;
+  border-color: #94ccde;
 }
 
 /* line 401, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand {
-  color: #777;
+  color: darkblue;
 }
 
 /* line 403, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #000058;
   background-color: transparent;
 }
 
 /* line 410, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-text {
-  color: #777;
+  color: darkblue;
 }
 
 /* line 415, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: darkblue;
 }
 
 /* line 418, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
@@ -6234,8 +6236,8 @@ tbody.collapse.in {
 
 /* line 425, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
+  color: lightblue;
+  background-color: darkblue;
 }
 
 /* line 433, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
@@ -6262,19 +6264,19 @@ tbody.collapse.in {
 /* line 453, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: #94ccde;
 }
 
 /* line 462, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #e7e7e7;
-  color: #555;
+  background-color: darkblue;
+  color: lightblue;
 }
 
 @media (max-width: 767px) {
   /* line 473, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777;
+    color: darkblue;
   }
   /* line 475, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -6283,8 +6285,8 @@ tbody.collapse.in {
   }
   /* line 482, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #555;
-    background-color: #e7e7e7;
+    color: lightblue;
+    background-color: darkblue;
   }
   /* line 490, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
@@ -6295,7 +6297,7 @@ tbody.collapse.in {
 
 /* line 506, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .navbar-link {
-  color: #777;
+  color: darkblue;
 }
 
 /* line 508, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
@@ -6305,7 +6307,7 @@ tbody.collapse.in {
 
 /* line 513, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
 .navbar-default .btn-link {
-  color: #777;
+  color: darkblue;
 }
 
 /* line 515, node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_navbar.scss */
@@ -9175,7 +9177,138 @@ button.close {
   }
 }
 
-/* line 5, scss/styles.scss */
-body .gris {
-  background: grey;
+/* body {
+    background: grey;
+} */
+/* line 9, scss/styles.scss */
+.navbar {
+  margin-bottom: 0;
+}
+
+/* line 13, scss/styles.scss */
+.logo {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* line 18, scss/styles.scss */
+.navbar-nav {
+  width: 100%;
+}
+
+/* line 20, scss/styles.scss */
+.navbar-nav li {
+  /*  width: 20%; */
+  font-weight: bold;
+}
+
+/* line 26, scss/styles.scss */
+.navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 31, scss/styles.scss */
+.img-header {
+  padding: 0;
+}
+
+/* line 35, scss/styles.scss */
+h1 {
+  font-weight: bold;
+  color: darkblue;
+  font-size: 2em;
+  border-bottom: 3px solid lightblue;
+  padding-bottom: 0.5em;
+}
+
+/* line 43, scss/styles.scss */
+h2 {
+  color: darkblue;
+  font-weight: bold;
+}
+
+/* line 48, scss/styles.scss */
+p {
+  color: darkblue;
+}
+
+/* line 52, scss/styles.scss */
+ul.navbar-nav {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 58, scss/styles.scss */
+  ul.navbar-nav > li {
+    width: 16.66667%;
+  }
+  /* line 65, scss/styles.scss */
+  ul.navbar-nav > li:nth-last-child(1):first-child {
+    width: 100% !important;
+  }
+  /* line 65, scss/styles.scss */
+  ul.navbar-nav > li:nth-last-child(2):first-child {
+    width: 50% !important;
+  }
+  /* line 68, scss/styles.scss */
+  ul.navbar-nav > li:nth-last-child(2):first-child ~ li {
+    width: 50% !important;
+  }
+  /* line 65, scss/styles.scss */
+  ul.navbar-nav > li:nth-last-child(3):first-child {
+    width: 33.33333% !important;
+  }
+  /* line 68, scss/styles.scss */
+  ul.navbar-nav > li:nth-last-child(3):first-child ~ li {
+    width: 33.33333% !important;
+  }
+  /* line 65, scss/styles.scss */
+  ul.navbar-nav > li:nth-last-child(4):first-child {
+    width: 25% !important;
+  }
+  /* line 68, scss/styles.scss */
+  ul.navbar-nav > li:nth-last-child(4):first-child ~ li {
+    width: 25% !important;
+  }
+  /* line 65, scss/styles.scss */
+  ul.navbar-nav > li:nth-last-child(5):first-child {
+    width: 20% !important;
+  }
+  /* line 68, scss/styles.scss */
+  ul.navbar-nav > li:nth-last-child(5):first-child ~ li {
+    width: 20% !important;
+  }
+  /* line 65, scss/styles.scss */
+  ul.navbar-nav > li:nth-last-child(6):first-child {
+    width: 16.66667% !important;
+  }
+  /* line 68, scss/styles.scss */
+  ul.navbar-nav > li:nth-last-child(6):first-child ~ li {
+    width: 16.66667% !important;
+  }
+}
+
+/* line 78, scss/styles.scss */
+.articulos {
+  margin-bottom: 3em;
+}
+
+/* line 82, scss/styles.scss */
+footer {
+  background: lightblue;
+  height: 7em;
+  padding-top: 2em;
+  margin-top: 2em;
+}
+
+/* line 87, scss/styles.scss */
+footer .legal > li {
+  border-right: 1px solid darkblue;
+  color: darkblue;
+}
+
+/* line 91, scss/styles.scss */
+footer .legal > li:last-child {
+  border-right: 0;
 }
